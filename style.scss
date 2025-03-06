@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree, sans serif";
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: #F4D04E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .blog-card {
+        border-radius: 20px;
+        border: 1px solid #111;
+        background: #FFF;
+        box-shadow: 8px 8px 0px 0px #000;
+        min-height: 500px;
+        width: 384px;
+        padding: 24px 24px;
+
+        &__image {
+            border-radius: 10px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+
+            &-published-day {
+                color: #111111;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
+            &-heading {
+                color: #111;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 150%;
+            }
+
+            &-description {
+                color: #6B6B6B;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
+            &-tag {
+                align-self: start;
+                border-radius: 4px;
+                background: #F4D04E;
+
+                &-name {
+                    color: #111;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 150%;
+                    padding: 4px 12px;
+                }
+            }
+        }
+
+        &__publisher-info {
+            display: flex;
+            align-items: center;
+
+            &-photo {
+                width: 32px;
+                height: 32px;
+            }
+
+            &-name {
+                padding-left: 12px;
+                color: #111;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 150%;
+            }
+        }
+
+    }
+}
